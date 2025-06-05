@@ -1,54 +1,44 @@
-# React + TypeScript + Vite
+# 📅 Event Scheduler
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Event Scheduler** is a React-based event management application built with TypeScript and Vite. This project allows users to schedule events, edit or delete them, toggle between weekly and monthly views, and persist events across page refreshes using localStorage. The app features a modern UI with Tailwind CSS and shadcn components.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Event Management: Add, edit, and delete events with titles and dates
+- View Toggling: Switch between "This Week" and "This Month" to filter events
+- Form Validation: Ensures required fields (title and date) are filled using react-hook-form
+- Persistence: Event data is saved in localStorage for a seamless user experience
+- Responsive Design: Works on desktop and mobile devices with Tailwind CSS styling
+- Modern UI: Uses shadcn components for dialogs, inputs, buttons, and calendars
 
-## Expanding the ESLint configuration
+## 🧱 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| **Category**      | **Technology**                     | **Purpose**                                       |
+| ----------------- | ---------------------------------- | ------------------------------------------------- |
+| **Framework**     | Vite + React + TypeScript          | Fast development and strong type safety           |
+| **Styling**       | Tailwind CSS v4                    | Utility-first CSS framework for responsive design |
+| **UI Components** | ShadCN UI + @radix-ui/react-dialog | Accessible, customizable components and dialogs   |
+| **Forms**         | react-hook-form                    | Efficient form handling and validation            |
+| **Date Handling** | date-fns                           | Formatting and filtering event dates              |
+| **State Storage** | localStorage (browser)             | Persists user-created event data across sessions  |
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📚Learning Concepts: React and TypeScript 
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This project has provided hands-on experience with several React, TypeScript, and web development concepts:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- Type Safety: Used TypeScript to define event types and ensure type safety across components
+- State Management: Applied useState and useEffect for managing events and persisting them in localStorage
+- Form Handling: Integrated react-hook-form for form validation and submission handling
+- Date Filtering: Used date-fns to filter events by week or month, improving user experience
+- Component Styling: Leveraged Tailwind CSS for responsive and modern UI design
+- Custom Components: Integrated shadcn components, learning to customize and extend them
+- Module Aliases: Configured @ aliases in Vite and TypeScript for cleaner imports (e.g., @/components/ui/button)
+- Dependency Management: Resolved npm conflicts using --legacy-peer-deps for packages like date-fns and react-hook-form.
+
+## Key Takeaways
+
+- 🔒 TypeScript Enhances Reliability: TypeScript caught potential errors early, improving code quality
+- 🔄 Local Storage is Powerful: Persisting events ensured a seamless user experience across refreshes
+- ⬇️ Organized Structure Matters: Separating components into src/components/ and UI elements into src/components/ui/ improved maintainability
+- ⚙️ Modern Tools Boost Productivity: Vite’s fast HMR and Tailwind’s utility-first approach sped up development
