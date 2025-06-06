@@ -22,7 +22,7 @@
 | **Date Handling** | date-fns                           | Formatting and filtering event dates              |
 | **State Storage** | localStorage (browser)             | Persists user-created event data across sessions  |
 
-## 📚 Learning Concepts: React and TypeScript 
+## 📚 Learning Concepts: TypeScript, Tailwind CSS, React-Hook-Form and ShadCN UI 
 
 This project has provided hands-on experience with several React, TypeScript, and web development concepts:
 
@@ -35,7 +35,7 @@ This project has provided hands-on experience with several React, TypeScript, an
 - Module Aliases: Configured @ aliases in Vite and TypeScript for cleaner imports (e.g., @/components/ui/button)
 - Dependency Management: Resolved npm conflicts using --legacy-peer-deps for packages like date-fns and react-hook-form.
 
-Key Takeaways
+## Key Takeaways
 
 - 🔒 TypeScript Enhances Reliability: TypeScript caught potential errors early, improving code quality
 - 🔄 Local Storage is Powerful: Persisting events ensured a seamless user experience across refreshes
