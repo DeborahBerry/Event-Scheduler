@@ -9,7 +9,7 @@
 - Form Validation: Ensures required fields (title and date) are filled using react-hook-form
 - Persistence: Event data is saved in localStorage for a seamless user experience
 - Responsive Design: Works on desktop and mobile devices with Tailwind CSS styling
-- Modern UI: Uses shadcn components for dialogs, inputs, buttons, and calendars.
+- Modern UI: Uses shadcn components for dialogs, inputs, buttons, and calendars
 
 ## 🧱 Tech Stack
 
@@ -33,7 +33,7 @@ This project has provided hands-on experience with several React, TypeScript, an
 - Component Styling: Leveraged Tailwind CSS for responsive and modern UI design
 - Custom Components: Integrated shadcn components, learning to customize and extend them
 - Module Aliases: Configured @ aliases in Vite and TypeScript for cleaner imports (e.g., @/components/ui/button)
-- Dependency Management: Resolved npm conflicts using --legacy-peer-deps for packages like date-fns and react-hook-form.
+- Dependency Management: Resolved npm conflicts using --legacy-peer-deps for packages like date-fns and react-hook-form
 
 ## Key Takeaways
 
