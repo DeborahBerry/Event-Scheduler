@@ -42,3 +42,5 @@ This project has provided hands-on experience with several React, TypeScript, an
 - ⬇️ Organized Structure Matters: Separating components into src/components/ and UI elements into src/components/ui/ improved maintainability
 - ⚙️ Modern Tools Boost Productivity: Vite’s fast HMR and Tailwind’s utility-first approach sped up development
 
+## 📌 Notes
+🤝 This project is open to creative edits and improvements. Feel free to clone, extend, or adapt it for your own needs.
